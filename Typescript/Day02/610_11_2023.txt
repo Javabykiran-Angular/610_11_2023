@@ -1,0 +1,8 @@
+Last Lecture
+1 Introduction
+
+Today Lecture
+1 Angular environmental setup
+2 Difference Between Angular js & angular 2+
+
+
