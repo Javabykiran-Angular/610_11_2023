@@ -1,0 +1,132 @@
+Difference Between Angular Js & Angular 2+ (2/4/5/6/7/8/9/10/11)
+BASIC VERSION of Angular
+1 Angular Js/angular 1.0
+2 Angular 2/4/5/6/7/8/9/10
+
+what is angular 12 ?
+ - it is front end technology
+ - It is a freamwork
+ - Angular (google) , React js(facebook ), embber js,vue js , JSP 
+ - gmail,github,sbi mutual funds,ganna.com,walmart 
+
+Why Angular?/ advantage of Angular ?/ explain the features of angular?
+- Angular is a platform that makes it easy to build applications with the web.
+- Angular have module ,declarative templates, dependency injection, services ,end to end tooling, and integrated best practices to solve development challenges. 
+
+- Angular build applications that live on the web, mobile,or the desktop.
+
+- Angular has matured into a client-side MVW framework  (i.e. Model-View-Whatever) for building of complex single page Application.
+
+- It places equal importance on application testing & application writing, while simplifying the development process.
+
+- Angular has tag line One framework Mobile & desktop,web.
+
+- Cross platform Progressive web apps (i.e. It support all platform mobile,desktop,different os)
+
+- It famous also for his speed & performance (bcz it is optimized for today's javascript virtual machine)
+
+- It is universal framework (i.e. node.js with express js,.net,php,java & other servers for near-instants server side language)
+
+- It has code splitting
+	- It has in build router system to load quickly
+	- Users only load code required to render the view they request.
+	
+- You can create Quick UI views with simple & powerful template syntax.
+
+- Angular is in build CLI(Command Line Interface) Tool,so you fast building,add components & tests it.
+
+
+index.html
+
+<html>
+	<head></head>
+	<body><body>
+</html>
+
+
+SPA - Single Page Application
+It contain only 1head+1 body
+SPA environment in the browser — no page reloads, no extra wait time.
+Angular These are, many E.g:
+Gmail, Google Maps, GitHub.
+ganna.com,sbi mutual funds
+
+
+
+what is Typescript?
+- Typescript is Object Orientated Lang.
+- Typescript is superset of javascript
+- Developed By Mircosoft 2012
+- It was designed by Anders Hejlsberg (designer of C#) at Microsoft
+its coding style is used like C++
+- The ECMAScript specification is a standardized specification of a scripting language
+- ECMAScript standard + ECMAScript version6(JS) + Additional features(Opps Concept,module)=Typescript
+
+
+Advantages
+1 Strong static typing
+       -TypeScript is a typed language, where we can specify the type of the variables, function parameters and object properties
+inferred Type to mention Data type of Variable, if not mentioned Data type its by deafault take "any" Data type
+2 Find Compile Time Error 
+3 Supports 
+  - Classess
+  - Inheritance
+  - interface
+  - enum
+  - Function Override
+
+Disadvantage
+- Browser Don't understand Typescript
+	.ts +tsc (typescript compiler)=>.js (javascript)
+	
+- Generally TypeScript takes time to compile the code.
+
+
+Installation
+Steps
+1 Installed Node
+2 Installed  VSCode code editor
+3 npm install -g typescript
+ - npm = Node Package Manager
+ -g = globally
+internet is required
+
+node --version 
+- Its Gives the Information about Node Version
+
+npm --version 
+-Its Gives the Information about npm(Node Package manager) Version
+
+tsc --version 
+ - Its Gives the Information about typescript Version	
+
+Identifier
+- Both Character & Digit are allowed
+- 1st letter should be character
+- 1st letter of digit is not allowed
+- special character are not allowed Except (_ and $ )
+- No spaces are allowed
+- No any special keywords are used for identifire
+e.g. 
+var a;
+var a1;
+var a_b;
+var a$b;
+Above all are allowed
+
+Below are not allowed
+var 1a;
+var 1_a;
+var a b;
+Variable: var, let, const
+Data types
+ - number,string,boolean,any,void
+null - Represents an intentional absence of an object value.
+undefined - Denotes value given to all uninitialized variables
+
+Null and undefined ─ Are they the same?
+The null and the undefined datatypes are often a source of confusion. The null and undefined cannot be used to reference the data type of a variable. They can only be assigned as values to a variable.
+
+Type Assertion
+1 angle bracket <>
+2 as syntax

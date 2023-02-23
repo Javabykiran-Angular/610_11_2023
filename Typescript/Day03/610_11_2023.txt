@@ -1,0 +1,16 @@
+Last Lecture
+1 Angular environmental setup
+2 Difference Between Angular js & angular 2+
+	- its is js based / typescript based
+	- it is mvc / it follows MVW
+	- it is object based / oops concept 
+	- mem mang is not proper / mem mang proper 
+	- performance decraease /perf. inc.
+	- it is not support mobile community / it support mobile  community
+
+Today Lecture
+1 What is Angular?
+
+2 Why angular is used?
+3 SPA Application
+
