@@ -1,0 +1,29 @@
+Last Lecture
+1 What is Angular?
+	- it is front end tech.
+	- it is freamwork
+	- angular,react js ,vue js, embber js ,jsp 
+2 Why angular is used?
+	- module,declarative template,servies,dependency injection,end to end tooling,component
+	- universal freamwork
+	- one freamwork to all
+	- cross platform progressive web app 
+	- speed & performamce
+	- it is code splitting 
+	- angular CLI
+	- it gives equal importance for testing & application writting
+	- SPA 
+3 SPA Application
+	- it contains 1 head & 1 body
+	- SAP Environment => 
+	- gmail,github,sbi mutual fund....
+
+Today Lecture
+1 What is Typescript
+2 Advantages of Typescript
+3 Disadvantages of Typescript
+4 Overview of Vscode
+	- code editior
+	
+5 Simple Program of typescript
+
