@@ -1,0 +1,35 @@
+Last Lecture
+1 What is Typescript
+	typescript= ecmascript+ ecmascript version(js)+additional features
+2 Advantages of Typescript
+	1 strong static typing
+	2 find compile time error 
+	3 suuport oops 
+3 Disadvantages of Typescript
+	1 browser doe not understand typescript 
+		tsc compiler => it trascompile ur .ts file into .js 
+	2 compile time is more 
+4 Overview of Vscode
+	- code editior
+	
+	
+5 Simple Program of typescript
+	demo1.ts
+	console.log("hello World");
+	console.log('Welcome angular 12')
+	console.log(`
+				kfsdjfbh
+				`)
+	
+	tsc demo1.ts 
+	node demo1.js 
+	
+	tsc demo1.ts & node demo1.js
+
+Today Lecture
+1 variable
+2 data types 
+3 type assertion
+4 Operators
+
+
