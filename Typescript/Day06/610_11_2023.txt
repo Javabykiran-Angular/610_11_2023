@@ -1,0 +1,28 @@
+Last Lecture
+1 variable
+	var a1,a_2;
+	
+2 data types 
+	number,string,boolean,any,void,misec null & undefined
+	var a:number=10;
+	var str!:string;
+	var myany:any;
+	
+3 type assertion
+	any/object/unknown
+	var s1:any;
+	1 angle bracket
+		var temp=(<string> s1);
+	2 as syntax
+		var temp=(s1 as string);
+4 Operators
+	Airthmatic,logical,relational,unary,ternary,bitwise
+	assignment
+
+Today Lecture
+1 Control Statement
+2 Loop Statement
+3 var vs let vs const
+
+
+
