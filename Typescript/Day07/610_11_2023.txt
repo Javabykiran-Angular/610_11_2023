@@ -1,0 +1,58 @@
+Last Lecture
+1 Control Statement
+	if,if-else,switch,break,continue
+	var s1=2;
+	if(s1<10){
+	...
+	}else {
+	....
+	}
+	
+	var choice=2;
+	
+	switch(choice){
+		case 1:console.log("....");
+				break;
+			...
+		default:...
+				break;
+	}
+	
+2 Loop Statement
+	while,do-while,for ,foreach
+	while(count!=0){
+	....
+	count--;
+	}
+	
+	do{
+		...
+		count--;
+	}while(count!=0);
+	
+	for(var i=0;i<4;i++){
+	....
+	}
+	
+3 var vs let vs const
+var => global scope 
+let => within nereast block
+
+for(let i=0;i<4;i++){
+	....
+	
+	}
+	
+	
+const => scope => global as well as local
+const pi=3.14; 
+
+Today Lecture
+1 Function type
+2 Anonymous Function
+3 fat arrow function
+
+
+
+
+
