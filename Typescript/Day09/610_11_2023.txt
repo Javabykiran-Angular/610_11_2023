@@ -1,0 +1,59 @@
+Last Lecture
+1 Optional parameter function
+	function add1(a:number,b?:number){
+	....
+	}
+	add1(4);
+	
+	function add1(a?:number,b?:number){
+	....
+	}
+	add1(7,9);
+	
+	function add1(a:number=9,b?:number){
+	....
+	}
+	add1(7,9);
+	
+	
+2 default parameter function
+		
+	function add1(a:number,b:numbe=40){
+	
+	}	
+	
+	add1(7,8)
+	
+3 array basics
+
+	let a:number[]=[7,8,9];
+	let a:string[]=[];
+	let a:any[]=[2.5,'sumit',true];
+	let a=[4,5];
+	
+	for(let i=0;i<a.length;i++){
+	...
+	}
+	
+	console.log(a);
+	console.log(a.join(" "))
+	
+4 join
+5 foreach
+	
+	a.forEach((myvalue,i,arr)=>{
+		....
+	})
+	
+
+Today Lecture
+1 Rest parameter function
+2 Push & pop
+3 Splice method
+4 slice 
+
+
+
+
+
+
