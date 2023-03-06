@@ -1,0 +1,34 @@
+Last Lecture
+1 Rest parameter function
+	function display(str:string...item:numer[]){
+		....
+	}
+	display('sumit',10,45,63);
+	
+2 Push & pop
+	- LIFO 
+	let a:number[]=[];
+	a.push(45);
+	a.push(52,60,78);
+	let res=a.pop();
+3 Splice method
+	let a:number[]=[45,85,63];
+	a.splice(2,0,78,80,40);
+	a.splice(2,1);
+	a.splice(2,1,90);
+	a.splice(2,1,90,100);
+	
+4 slice
+	- it copy a section of data 
+	let temp=a.slice(1,8);
+	
+
+Today Lecture
+1 Json Object
+2 Array Of Object 
+
+
+
+
+
+
