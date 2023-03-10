@@ -1,0 +1,69 @@
+Last Lecture
+1 Additional Features of typescript
+2 Class,object,property
+3 Constructor
+4 Access Specifier
+5 Access in same Package=> 
+6 Access in different Package
+
+export class Myclass{
+	public id:number;
+	private fname:string;
+	...
+	
+	constructor(id:number,f:string){
+		this.id=id;
+		this.fname=f;
+		...
+	}
+	
+	private display(){
+		console.log(`
+			id :: ${this.id}
+			...
+		`)
+	}
+}
+
+export function add1(a:number,b:number):number{
+	return (a+b);
+}
+
+export const pi=3.14;
+
+let obj=new Myclass();
+obj.display();
+
+demo2.ts
+import {Myclass,add1,pi} from './demo1';
+
+let obj=new Myclass(...);
+obj.display();
+
+console.log(`
+	... ${add1(2,3)}
+`)
+...
+
+myfolder
+demo3.ts
+	
+	import {Myclass} from '../day11/demo1';
+	
+	let obj=new Myclass(...);
+	obj.display();
+	
+
+Today Lecture
+1 Inheritance => is relation 
+2 method Override
+3 Interface
+4 association/has relation/composition 
+
+	 https://www.youtube.com/watch?v=jBBTYKIgNT8&list=PLa3i9wpSPojEDNTe66s5XhXPSd50XqjSv&index=2&t=12s
+
+
+
+
+
+
