@@ -1,0 +1,97 @@
+Last Lecture
+1 Inheritance => is relation 
+	export class Shape{
+		myarea(){
+		....
+		}
+	}
+	
+	import {Shape} from './shape';
+	export class Circle extends Shape{
+		
+		radius:number;
+		area:number;
+		
+		constructor(r:number){
+			super();
+			this.radius=r;
+			this.area=0;
+		}
+	
+		override myarea(){
+			this.area=3.14*this.radius*this.radius
+		}
+		
+		display(){
+		....
+		}
+	
+	}
+	
+	import {Circle} from './circle';
+	...
+	
+	let obj=new Circle(2);
+	obj.myarea();
+	obj.display();
+	
+	
+2 method Override
+3 Interface
+	export interface employee{
+		fname:string;
+		lname:string;
+		fullname?:string;
+		display();
+	}
+	
+	import {employee} form './employee';
+	import {Department} from './Department';
+	
+	export class EmployeeDetails implement employee{
+		fname:string;
+		lname:string;
+		sal:number;
+		dept:Department;
+		
+		constructor(f:string,l:string,sal:number,r:string){
+		.....
+			this.dept=new Department(role);
+		}
+		
+		display(){
+		...
+		this.dept.getRole();
+		}
+	}
+	
+	import  {EmployeeDetails} from './employeeDetails'
+;	
+	let emp=new EmployeeDetails('sumit','Raokhande',100000,'DevOps');
+	emp.display();
+	
+	export class Department{
+		private role:string;
+		//getter & setter
+		
+		constructor(r:string){
+		...
+		}
+		
+	}
+	
+4 association/has relation/composition 
+
+
+Today Lecture
+1 Angular Setup 
+2 Project Creation
+
+
+
+	 
+
+
+
+
+
