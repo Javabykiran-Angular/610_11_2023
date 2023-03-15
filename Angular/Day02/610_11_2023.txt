@@ -1,0 +1,17 @@
+Last Lecture
+1 Angular Setup 
+2 Project Creation
+
+Today Lecture
+1 Angular arch Overview
+2 Application flow
+3 component creation manually
+
+
+
+	 
+
+
+
+
+
