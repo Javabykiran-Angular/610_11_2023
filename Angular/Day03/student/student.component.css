@@ -1,0 +1,13 @@
+h2{
+    color: blue;
+}
+
+.mydiv{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#div1{
+    font-style: italic;
+    font-size:32px;
+}

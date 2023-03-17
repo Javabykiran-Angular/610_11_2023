@@ -1,0 +1,76 @@
+Last Lecture
+1 Angular arch Overview
+	- angular is component orientated arch. 
+	- component 
+		1 view file => .html => only one 
+		2 stylesheet file => .css => multiple 
+		3 component file => .ts => only one
+		4 testing file => spec.ts 
+	- every component has its own metadata
+		- it gives extra information about ur component
+		
+		@Component({
+			....
+		})
+	- data binding 
+		- component to view file 
+			1 string interpolation
+			2 property binding
+			3 style binding
+			4 class binding
+	- event binding
+		- view file to component
+			click,change,k/b event,mouse event ...
+	- directive 
+		- to chnage ur behaviour of view dynamically
+			1 attribute directive
+			2 structural directive
+			3 component directive
+			4 event directive
+	- app module 
+		- always one root module is present 
+		1 declaration
+			- to register ur component
+			- it creates its factory class 
+		2 import
+			- to register ur module
+		3 service
+			- it is simple class 
+			- it is used to write ur BL
+			- it is used code maintabilty
+			- it is code resualbility
+			- it is used to connect ur backend server to ur front end server 
+			- it provides isolation 
+			- dpendancy injection 
+			- to register that service => providers :[]
+		4 routing
+			- it is used for navigation purpose
+			- send data as well from one comp to another
+	- Injector 
+		- u can inect 3rd party services 
+		- dependancy injection
+		- angular inbuild services as well u can inject 
+			
+2 Application flow
+
+<h2> My first Angular Application <h2>
+
+Today Lecture
+1 Component creation through manually
+	1 view file 
+	2 css file 
+	3 component file 
+2 Component creation through cli 
+3 Data binding 
+	- data is flow from component file to view file 
+4 string interpolation
+
+
+
+
+	 
+
+
+
+
+
