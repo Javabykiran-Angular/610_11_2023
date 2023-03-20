@@ -1,0 +1,58 @@
+Last Lecture
+1 Component creation through manually
+	1 view file 
+	2 css file 
+	3 component file 
+	app=> 
+		employee
+			employee.comonent.html
+				<h1> ...
+			employee.comonent.css
+			employee.comonent.ts
+			@Component({
+				selector:'app-emp',
+				templateUrl:'./employee.comonent.html',
+				StyleUrls:['./employee.comonent.css']
+			})
+			export class EmployeeComponent{
+			
+			}
+			
+			app.module.ts
+			@NgNodule({
+				declaration:[
+					EmployeeComponent
+				]
+			})
+			app.comonent.html
+			<app-emp>
+2 Component creation through cli 
+	ng g c student 
+	employee.comonent.html 
+	<app-student>
+3 Data binding 
+	- data is flow from component file to view file 
+4 string interpolation
+	<h1> {{'Welcome '+name}}
+	<h1> {{num+num}}
+	<img src=" {{imgUrl}} "
+
+.ts 
+name:string='...';
+imgUrl="../../assets/bg4.jpg";
+num:number=4;
+
+Today Lecture
+1 Property binding
+2 string interpolation VS Property binding
+3 style binding
+
+
+
+
+	 
+
+
+
+
+
