@@ -1,0 +1,31 @@
+<p>eventbinding2 works!</p>
+
+<!-- template ref variable 
+    - it gives dom element information
+    - it is also a json object
+    - it holds the object/handle of particular html element
+    - u can access a data as well as manipulate a data 
+    - use # symbol to create a template ref variable on each html element
+    - give a unique name 
+    - u can create any html tag 
+-->
+   
+    <input #inputname  type="text" placeholder="Enter the name ">
+    &nbsp;&nbsp;&nbsp;
+    <button (click)="onSend(inputname)" >Send</button> <br><br>
+
+    <input #inputname1  type="text" placeholder="Enter the name ">
+    &nbsp;&nbsp;&nbsp;
+    <button (click)="onSend1(inputname1.value)" >Send</button> 
+<hr>
+
+<label  for="">Num1::&nbsp;&nbsp; </label>
+<input #num1 type="text" placeholder="Enter the number 1"><br><br>
+
+<label for="">Num2::&nbsp;&nbsp; </label>
+<input #num2 type="text" placeholder="Enter the number 2 "><br><br>
+<button (click)="onAddition(num1.value,num2.value)">Addition</button>
+<br><br>
+<input  type="text" [value]="result" placeholder="Display Result">
+<hr>
+<input #mydata type="text" placeholder="Change event..." (change)="onChange(mydata.value)">

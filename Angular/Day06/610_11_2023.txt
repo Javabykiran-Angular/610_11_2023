@@ -1,0 +1,67 @@
+Last Lecture
+1 Class Binding
+	<h1 [class]="myclass">....
+	
+	<h1 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+	>....
+	
+	<div [ngClass]="jsonobj">
+	
+	.ts
+	myclass:string='success';
+	rating:number=21;
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	
+	jsonobj={
+		'success':!this.isError,
+		'danger':this.isError,
+		'special':this.isSpecial 
+	}
+	
+2 Event Binding
+	- data/request flow view to component
+3 click event 
+	
+	<button (click)="onClick()">
+	<img (click)="onImage()">
+	.ts 
+	count:number=0;
+	onClick(){
+		if(this.count==0){
+		console.log("...")
+		this.count++;
+		}
+		
+	}
+	
+	onImage(){
+	...
+	}
+	
+4 $event 
+
+	<button value="..." (click)="onClick($event)">
+	
+	.ts 
+	
+	onClick(myevent:any){
+		....
+		myevent.target.value;
+	}
+
+Today Lecture
+1 template ref variable
+2 real time example
+3 change event 
+
+
+
+
+	 
+
+
+
+
+
