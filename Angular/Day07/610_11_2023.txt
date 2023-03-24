@@ -1,0 +1,63 @@
+Last Lecture
+1 template ref variable
+	<input #inputname>
+	<button (click)="onClick(inputname)">
+	
+	.ts file
+	onClick(myname:any){
+	....
+	myname.value
+	myname.style.background='green';
+	...
+	}
+2 real time example
+	<input #num1>
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)">
+	<input [value]="result">
+	
+	.ts 
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		...
+		
+		this.result=n1+n2;
+	
+		//this.result=num1+num2;
+	}
+3 change event 
+	<input #name (change)="onChange(name.value)">
+	
+	.ts file
+	onChange(myvalue:string){
+	....
+	
+	.....
+	
+	}
+
+Today Lecture
+1 Keyboard Event 
+	1 keyup
+	2 keydown
+2 two way binding
+	ngModel 
+3 structural directive
+	- u can update ur DOM Structure dynamically 
+	1 *ngIf => to check condition and show/hide ur dom element
+	2 *ngFor => to iterate dynamically a data to dispaly 
+	3 *ngSwitch => to execute a specific case 
+4 if directive
+5 ng-template
+	- it is component directive 
+
+
+
+
+
+	 
+
+
+
+
+

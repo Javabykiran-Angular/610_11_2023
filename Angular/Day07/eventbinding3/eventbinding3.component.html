@@ -1,0 +1,18 @@
+<p>eventbinding3 works!</p>
+
+<input type="text" placeholder="key up event" (keyup)="onkeyUp()" >
+<br><br>
+<input type="text" placeholder="key down event" (keydown)="onkeyDown()" >
+<hr>
+
+<!-- ngModel 
+    - It is attribute directive
+    - FormsModule import 
+    - [(ngModel)]="Propertyname"
+    - u can apply any html tag 
+    - it works as two way binding 
+    - always updatated data is present in property 
+-->
+
+<input type="text" [(ngModel)]="name" >
+{{name}}

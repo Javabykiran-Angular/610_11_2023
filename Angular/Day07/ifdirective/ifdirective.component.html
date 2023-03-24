@@ -1,0 +1,18 @@
+<p>ifdirective works!</p>
+
+<!-- syntax  
+    *ngIf="condition" 
+    - u can apply any html tag 
+-->
+
+<!-- <div *ngIf="rating<4">
+    <h2>Condition is true </h2>
+</div> -->
+
+<div *ngIf="rating<4;else myelse">
+    <h2>Condition is true </h2>
+</div>
+
+<ng-template #myelse>
+    <h2>Condition is false</h2>
+</ng-template>
