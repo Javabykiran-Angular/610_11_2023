@@ -1,0 +1,56 @@
+Last Lecture
+1 Keyboard Event 
+	1 keyup
+	<input (keyup)="onKeyup()"
+	2 keydown
+	<input (keydown)="onKeydown()"
+	.ts file
+	onKeyup(){
+	...
+	}
+	
+	onKeydown(){
+	
+	}
+2 two way binding
+	ngModel 
+		<input [(ngModel)]="name">
+		.ts file
+		name:string='';
+		
+		
+3 structural directive
+	- u can update ur DOM Structure dynamically 
+	1 *ngIf => to check condition and show/hide ur dom element
+	2 *ngFor => to iterate dynamically a data to dispaly 
+	3 *ngSwitch => to execute a specific case 
+4 if directive
+	<div *ngIf="rating<4;else elsepart">
+		<h2> Condition true</h2>
+	</div>
+	
+	<ng-template #elsepart>
+		<h2> Condition is false</h2>
+	</ng-template>
+	
+	.ts file 
+	rating:number=21;
+5 ng-template
+	- it is component directive
+	
+Today Lecture
+1 for directive 
+2 mouse event 
+	1 mouseover
+	2 mouseout
+
+
+
+
+
+	 
+
+
+
+
+
