@@ -1,0 +1,60 @@
+Last Lecture
+1 Switch directive
+	<input #inputcolor>
+		<button (click)="onSend(inputcolor.value)"
+	
+	<div [ngSwitch]="choice">
+	
+		<div *ngSwitchCase="'red'"		
+			[style.background]="choice"
+		>Ur color is {{choice}}
+		</div>
+		
+		<div *ngSwitchCase="'green'">Ur color is {{choice}}
+		</div>
+		..
+		
+		<div *ngSwitchDefault
+			[style.background]="choice===''?'black':'orange'"
+			[style.color]="choice===''?'white':'black'"
+			
+		>Ur color is wrong {{choice}}
+		</div>
+		
+		
+		<div *ngSwitchDefault
+			[ngStyle]="{
+				'background':choice===''?'black':'orange',
+				'color':choice===''?'white':'black'
+			}"
+			
+		>Ur color is wrong {{choice}}
+		</div>
+	
+	</div>
+	
+	.ts
+	
+	onSend(colorname:string){
+		this.choice=colorname.toLowercase().trim();
+	}
+	
+Today Lecture
+1 Component Interaction
+	pre-requiest
+	parent-child relationship establish
+2 @Input
+	- it send data(string,number,boolean,any,json,array,array of object) from parent to child 
+3 @Output
+	- it send data from child to parent 
+
+
+
+
+
+	 
+
+
+
+
+
