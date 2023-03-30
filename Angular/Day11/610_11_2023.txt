@@ -1,0 +1,78 @@
+Last Lecture
+1 Component Interaction
+	pre-requiest
+	parent-child relationship establish
+	
+2 @Input
+	- it send data(string,number,boolean,any,json,array,array of object) from parent to child 
+3 @Output
+	- it send data from child to parent 
+	
+	app.comp.html
+	<app-parent>
+	
+	parent.html
+	<app-child1 [parentStrdata]="strdata"
+				[Parentjson]="jsonobj">
+	parent.ts
+	
+	strdata:string='...'
+	jsonobj={
+	...
+	}
+	
+	child1.ts
+ 	@Input() parentStrdata:string='';
+	@Input() Parentjson:any={};
+	
+	child1.html
+	{{parentStrdata}}
+	{{Parentjson.id}}
+	
+	
+	parent.html
+	{{strdatareceived}}
+	
+	....
+	
+	<app-child2 (ChildStrevent)="strdatareceived=$event"
+
+				(ChildArrObjEvent)="arrobjreceived=$event">
+	
+	parent.ts 
+	strdatareceived:string='';
+	arrobjreceived:any[]=[];
+	
+	child2.ts
+	
+	@Output() ChildStrevent=new EventEmitter();
+	@Output() ChildArrObjEvent=new EventEmitter();
+	
+	strdata:string='...';
+	arrobj:any[]=[
+	
+	...
+	
+	];
+	
+	onSend(){
+		this.ChildStrevent.emit(this.strdata)
+		this.ChildArrObjEvent.emit(this.arrobj);
+	}
+	
+Today Lecture
+1 Pipe
+	it transform ur data to the end user 
+	- it does not affect ur original data 
+2 Inbuild Pipe 
+
+
+
+
+
+	 
+
+
+
+
+
