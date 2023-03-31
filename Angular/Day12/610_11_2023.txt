@@ -1,0 +1,52 @@
+Last Lecture
+1 Pipe
+	it transform ur data to the end user 
+	- it does not affect ur original data 
+2 Inbuild Pipe
+	<h1> {{strdata|lowercase}}</h1>
+	<h1> {{strdata|uppercase}}</h1>
+	<h1> {{strdata|titlecase}}</h1>
+	<h1> {{strdata|slice:1:8}}</h1>
+	
+	<h1> {{0.25|percent}}</h1>
+	<h1> {{0.025|percent:'1.1'}}</h1>
+	<h1> {{0.091|percent:'2.2'}}</h1>
+	
+	<h1> {{0.25|currency}}</h1>
+	<h1> {{0.25|currency:'INR'}}</h1>
+	<h1> {{0.25|currency:'INR':'code'}}</h1>
+	
+	
+	<h1> {{5.6784632|numbre:'1.2-3'}}</h1>
+	<h1> {{5.6785632|numbre:'1.2-3'}}</h1>
+	
+	<h1> {{mydate|date:'mediumDate'}}</h1>
+	<h1> {{mydate|date:'dd-MM-yyyy'}}</h1>
+	<h1> {{mydate|date:'longDate'}}</h1>
+	
+	<h1> {{mydate|date:'hh:mm:ss a'}}</h1>
+	
+	<h1> {{mydate|date:'longDate'|uppercase}}</h1>
+	
+	.ts
+	mydate=new Date();
+	
+
+Today Lecture
+1 Custom pipe
+2 PipeTransform
+3 transform 
+ng g p abc
+
+
+
+
+
+
+
+	 
+
+
+
+
+
