@@ -1,0 +1,54 @@
+Last Lecture
+1 Custom pipe
+2 PipeTransform => interface
+3 transform => method
+	
+	summary.pipe.ts
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implements PipeTransform{
+		
+		transform(value:any,start:number=0,end:number=15){
+			
+			let temp=(<string> value);
+			return (temp.substring(start,end)+"...");
+		}
+	}
+	
+	app.module.ts
+	declartion:[
+	SummaryPipe
+	]
+	
+	custompipe.html
+
+<h2> {{strdetails | summary}}</h2>	
+<h2> {{strdetails | summary:0:35}}</h2>	
+	
+	
+ng g p abc
+
+Today Lecture
+1 Service
+	- It is simple class 
+	- it is used to write a Businsess Logic 
+	- to code resulability
+	- to code maintainability 
+	- it provides isolation to ur component 
+	- to connect ur backend server 
+2 Dependancy Injection
+	
+
+
+
+
+
+
+
+	 
+
+
+
+
+
