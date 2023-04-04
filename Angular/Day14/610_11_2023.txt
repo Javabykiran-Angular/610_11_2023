@@ -1,0 +1,84 @@
+Last Lecture
+1 Service
+	- It is simple class 
+	- it is used to write a Businsess Logic 
+	- to code resulability
+	- to code maintainability 
+	- it provides isolation to ur component 
+	- to connect ur backend server 
+2 Dependancy Injection
+
+export class CourseService{
+	private course:string[]=[""];
+	getCourse(){
+		return this.course;
+	}
+}
+
+course.ts
+
+mycourse:string[]=[];
+constrctor(private service:CourseService){
+
+	//let service=new CourseService();
+	//this.mycourse=service.getCourse();
+}
+ngOninit(){
+this.mycourse=this.service.getCourse();
+}
+
+
+app.module.ts
+providers:[CourseService]
+
+
+
+
+
+Today Lecture
+1 Http Method
+	1 get => to get/fetch data from backend server 
+	2 post => to send data from frontend server to backend server 
+	3 put => to udpadte a data 
+	4 delete => to delete a data 
+
+Http Request-Response
+	Http request
+		1 http header
+			extra info machine,date,ip,method
+		2 http body 
+			data => json/text/xmlformat
+	Http Response 
+		1 http header
+		extra info machine,date,ip,method
+			status code => 
+				1 2xx => success,ok 200-299
+				2 3xx => redirection => 300-399
+				4 4xx => client side => 400-499
+				5 5xx => server side => 500-599
+		2 http body 
+			data
+	
+	
+2 http://jsonplaceholder.typicode.com/posts
+	- it is a fake service 
+		bcz it is not store data in database whether u request post/put/delete but it gives a response of ur request 
+		
+
+3 @injectable
+4 observable
+5 get request 
+6 post request 
+
+
+
+
+
+
+
+	 
+
+
+
+
+
