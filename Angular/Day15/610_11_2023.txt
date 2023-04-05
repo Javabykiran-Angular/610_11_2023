@@ -1,0 +1,116 @@
+Last Lecture
+1 Http Method
+	1 get => to get/fetch data from backend server 
+	2 post => to send data from frontend server to backend server 
+	3 put => to udpadte a data 
+	4 delete => to delete a data 
+
+Http Request-Response
+	Http request
+		1 http header
+			extra info machine,date,ip,method
+		2 http body 
+			data => json/text/xmlformat
+	Http Response 
+		1 http header
+		extra info machine,date,ip,method
+			status code => 
+				1 2xx => success,ok 200-299
+				2 3xx => redirection => 300-399
+				4 4xx => client side => 400-499
+				5 5xx => server side => 500-599
+		2 http body 
+			data
+	
+	
+2 http://jsonplaceholder.typicode.com/posts
+	- it is a fake service 
+		bcz it is not store data in database whether u request post/put/delete but it gives a response of ur request 
+		
+		ng g s http
+		
+		app.module.ts
+		HttpClientModule => @angular/common/http
+		
+		@Injectable({
+			ProvideIn:"root"
+		});
+		export class HttpService{
+			
+			url:string='';
+			
+			constructor(private http:HttpClient){}
+			
+			getPost(){
+				return (this.http.get(this.url));
+			}
+			
+			postdata(obj:any){
+				return (this.http.post(this.url,obj));
+			}
+			
+			
+		}
+		
+		post.ts
+		posts:any[]=[];
+		constructor(private service:HttpService){}
+		
+		ngOninit(){
+			this.GetPost();
+		}
+		
+		GetPost(){
+			this.service.getPost()
+			.subscribe((response:any)=>{
+				console.log(response)
+				this.posts=response;
+			})
+		}
+		
+		onSend(inputtitle:any,inputbody:any){
+				let obj={
+					title:inputtitle,
+					body:inputbody
+				}
+				
+				this.service.postdata(obj)
+				.subscribe((response)=>{
+					console.log(response)
+				})
+		}
+		
+		post.html
+		
+		<label >title
+		<input #inputtitle>
+		<label >Body
+		<input #inputbody>
+		<button (click)="onSend(inputtitle.value,inputbody.value)"
+		
+		table...
+		
+		
+
+3 @injectable
+4 observable
+5 get request 
+6 post request 
+
+Today Lecture
+1 Put 
+2 delete 
+3 error handling
+
+
+
+
+
+
+
+	 
+
+
+
+
+
