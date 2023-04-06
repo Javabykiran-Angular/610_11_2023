@@ -1,0 +1,79 @@
+Last Lecture
+1 Put 
+
+<div [hidden]="isHidden">
+	<label>
+		<input [(ngModel)]="id" readonly>
+	<label>
+		<input [(ngModel)]="title" >
+		
+		<button (click)="onupdate()"> Update
+			
+
+	<td> <button (click)="onEdit(item)" >Edit
+	
+	.ts
+	isHidden:boolean=true;
+	id:number;
+	title:string='';
+	body:string='';
+	onEdit(item:any){
+		this.id=item.id;
+		....
+		this.isHidden=false;
+	}
+	
+	onupdate(){
+		let obj={
+			id:this.id,
+			title:this.title
+			..
+		}
+		this.service.updatedata(obj)
+		.subscribe((response)=>{
+		....
+		})
+	}
+	
+	http.service.ts
+	updatedata(obj:any){
+		return this.http.put(`${this.url}/${obj.id}`,obj)
+	}
+	DeleteData(id:any){
+		return this.http.delete(`${this.url}/${id}`)
+	}
+	
+2 delete 
+	onDelete(id:any){
+		this.service.DeleteData(id)
+		.subscribe((response)=>{
+		....
+		},(myerror)=>{
+			alert("...")
+		})
+	}
+3 error handling
+
+Today Lecture
+1 Routing
+	- navigation from one component to another component
+2 Routing Steps
+	1 configure the route
+	2 use <router-outlet>
+	3 establish the link between component
+3 empty path
+4 wild cart character 
+5 Send parameter
+
+
+
+
+
+
+
+	 
+
+
+
+
+
