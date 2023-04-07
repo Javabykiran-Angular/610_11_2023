@@ -1,0 +1,68 @@
+Last Lecture
+1 Routing
+	- navigation from one component to another component
+2 Routing Steps
+	1 configure the route
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			{
+				path:'Page1',component:Page1Component
+			},
+			{
+				path:'Page2/:id/:username',component:Page2Component
+			}
+			....
+			{
+				path:'**',component:Notfound
+			}
+		]
+		
+		app.component.html
+		<router-outlet>
+	2 use <router-outlet>
+	3 establish the link between component
+	
+		home.html
+		<a [routerLink]="['/Page2',myid,myusername]">Page2
+		
+		page2.ts
+		
+		constructor(private routes:ActivatatedRoute){}
+		
+		GetDataFromUrl(){
+			this.route.paramMap
+			.subscribe((param:any)=>{
+				this.myid=+param.get("id");
+				...
+			})
+		}		
+		
+3 empty path
+4 wild cart character 
+5 Send parameter
+
+Today Lecture
+1 Send queryParameter
+	localhost:4200/query?id=9&username=sumit&
+2 programatically routing => navigate method
+3 lazy loading
+  - create a custom module/feature module  
+  - create our routing file
+  
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
