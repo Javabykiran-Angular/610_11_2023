@@ -1,0 +1,97 @@
+Last Lecture
+1 Send queryParameter
+	localhost:4200/query?id=9&username=sumit&
+	
+	home.ts
+	jsonobj={
+	...
+	}
+	home.html
+	<a routerLink="/.." [queryParams]=jsonobj>
+	
+	queryparameter.ts
+	
+	constructor(private route:ActivatatedRoute){
+	
+	}
+	
+	getDataFromUrl(){
+		this.route.queryParamMap
+		.subscribe((param)=>{
+			...
+		})
+	}
+	
+2 programatically routing => navigate method
+		
+	home,ts 
+constructor(private router:Router){}
+
+		onPage2(){
+			this.router.navigate(['/Page2',this.myid]);
+		}
+		
+		onPage3(){
+			this.router.navigate(['/Page3',this.myid,this.username]);
+		}
+		
+		onQueryParameter(){
+		
+		this.router.navigate(['/Queryparam'],{
+			queryparams:this.jsonobj
+		})
+		
+		}
+		
+	
+3 lazy loading
+  - create a custom module/feature module  
+  - create our routing file
+	ng g m user --routing 
+	
+	user.routing.ts
+	[
+		{
+			path:"",componet:listUser
+		},
+		{
+			path:"adduser",componet:addUser
+		}
+		...
+	]
+	
+	app-routing.ts
+	{
+		path:"user",loadChilderm:()=>import('./user/user.modu;e').then(m=>m.userModule)
+	}
+  
+Today Lecture
+1 Bootstrap Overview
+	- it is css Freamwork
+	- Make application responsive
+	- it provide template code
+	- make application attractive
+2 Integration of bootstrap
+	1 online intergration
+		- CDN link = index.html => head section 
+	2 offline intergration
+		npm install bootstrap@4.6 --save
+		
+
+		
+  
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
