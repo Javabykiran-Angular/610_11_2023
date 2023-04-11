@@ -1,0 +1,34 @@
+Last Lecture
+1 Bootstrap Overview
+	- it is css Freamwork
+	- Make application responsive
+	- it provide template code
+	- make application attractive
+2 Integration of bootstrap
+	1 online intergration
+		- CDN link = index.html => head section 
+	2 offline intergration
+		npm install bootstrap@4.6 --save
+		
+Today Lecture
+1 Basic Grid System
+2 how to implement bootstrap
+		
+
+		
+  
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
