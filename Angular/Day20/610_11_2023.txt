@@ -1,0 +1,59 @@
+Last Lecture
+1 Basic Grid System
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-6 col-lg-6">
+				<table class="table table-dark">
+					....
+			</div>
+			<div class="col-sm-4 col-md-6 col-lg-6">
+				<div class="form-group">
+					<label>
+					<input class="form-control">
+					....
+					<button class="btn btn-success">
+					
+2 how to implement bootstrap
+	
+Today Lecture
+1 Template driven form
+	- it is used form simple form 
+	- login,signup,f/b etc 
+	- all basic validation is perform on view file 	
+2 FormControl
+	- it is class 
+	
+	1 valid => true
+	2 invalid => true 
+	3 touched => true 
+	4 pristine => true 
+	5 dirty  => true/false
+	6 errors => it is object => we called a html attribute 
+	
+	steps
+	1 to create a instance of FormControl class => for that we use ngModel without notation [()] => ngModel it hold the instance of FormControl class, if u use ngModel then u have to use name attribute
+	2 we have to create template ref variable & assaign ngModel to it.
+	3 u have to validate html element for that u use errors object for we have use required attribute.
+	
+	
+3 ngForm
+4 json pipe
+		
+
+		
+  
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
